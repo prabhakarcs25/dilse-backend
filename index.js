@@ -17,11 +17,7 @@ const io = new Server(server, {
 
 mongoose
   .connect(
-    "mongodb+srv://prabhakarsingh63915:LVarp18@cluster0.5olyu2h.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
+    "mongodb+srv://prabhakarsingh63915:LVarp18@cluster0.5olyu2h.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
   )
   .then(() => console.log("✅ MongoDB Connected"))
   .catch((err) => console.error("❌ MongoDB Error:", err));
